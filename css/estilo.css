@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1300px) {
+  .encabezado {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.encabezado {
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-transform: capitalize;
+  padding: 5px 0px 20px 10px;
+  display: flex;
+  flex: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.encabezado ul li {
+  list-style: none;
+  padding-left: 10px;
+  /*display: inline-block;*/
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.encabezado ul li a {
+  text-decoration: none;
+  color: white;
+  /*float:right;*/
+  font-size: 1.1vw;
+}
+.encabezado ul li a:hover {
+  border-radius: 5%;
+  color: black;
+  background-color: white;
+}
+
+.logo {
+  /*display: block;
+  float: left;*/
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+  padding: 0px 50px 0px 50px;
+}
+.logo:hover {
+  font-size: 1.5vw;
+}
+.logo span {
+  color: green;
+}
+
+/*main para todas las paginas menos para productos*/
+main {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../imagen/running-track-1201014_960_720.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Inicio pagina index*/
+.oferta {
+  text-align: center;
+  padding: 50px 0px 0px 0px;
+}
+.oferta img {
+  width: 60%;
+  height: 60%;
+}
+
+.info {
+  margin: 1% 2% 2% 2%;
+  color: white;
+  background-color: black;
+  border: 4px solid green;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1vw;
+}
+
+/* fin pagina index*/
+/*inicio pagina Productos*/
+.productos {
+  padding-left: 0px;
+  width: 100%;
+  height: 200%;
+  background-image: url(../imagen/running-track-1201014_960_720.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.video {
+  margin: 1% 0% 1% 1%;
+  color: green;
+  font-size: 1.4vw;
+}
+
+.item {
+  background-color: black;
+  border: 4px solid black;
+  box-shadow: inset 0 0 128px;
+  padding: 15px;
+  color: white;
+  margin: 1% 0% 1% 1%;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+.item:hover {
+  transform: scale(1.1);
+}
+
+.titulo-productos {
+  display: flex;
+  justify-content: center;
+}
+
+.botn {
+  color: white;
+  padding: 3PX 5PX;
+  font-size: 1.3vw;
+  text-decoration: none;
+}
+.botn:hover {
+  background-color: green;
+  color: black;
+}
+
+/*fin pagina Productos*/
+/*pagina Nosotros*/
+.nosotros {
+  text-align: center;
+  color: white;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: black;
+  border: 4px solid green;
+  padding: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4vw;
+  box-shadow: inset 0 0 128px;
+}
+
+/*Fin pagina nosotros*/
+/*Inicio pagina envios*/
+table {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 1.3vw;
+  box-shadow: inset 0 0 128px;
+}
+
+.entrega {
+  text-align: center;
+}
+
+/*Fin pagina envios*/
+/*Inicio pagina contacto*/
+.contacto {
+  text-align: center;
+  color: white;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: black;
+  border: 4px solid green;
+  padding: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4vw;
+  box-shadow: inset 0 0 128px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Fin pagina contacto*/
+/*inicio footer (igual para todas las paginas)*/
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(1, 25%);
+  grid-template-areas: "ayui redes pagos newlester";
+  font-size: 10px;
+  background-color: black;
+  color: white;
+  padding-left: 2%;
+  padding-bottom: 2%;
+}
+footer p {
+  font-size: 1.3vw;
+}
+footer ul li {
+  list-style: none;
+}
+
+.ayui ul li a {
+  font-size: 1.1vw;
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+.ayui ul li a:hover {
+  color: green;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+}
+.redes ul li a {
+  font-size: 1.3vw;
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+}
+.redes ul li a:hover {
+  color: green;
+}
+
+.pagos {
+  font-size: 1.3vw;
+  text-transform: capitalize;
+}
+
+.newlester {
+  text-transform: capitalize;
+  font-size: 1.3vw;
+}
+
+.btn {
+  color: white;
+  padding: 3PX 5PX;
+  text-decoration: none;
+  font-size: 1.3vw;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.btn a:hover {
+  background-color: white;
+  color: black;
+}
+
+/*fin footer*//*# sourceMappingURL=estilo.css.map */

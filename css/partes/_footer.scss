@@ -1,0 +1,75 @@
+/*inicio footer (igual para todas las paginas)*/
+footer{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(1, 25%);
+    grid-template-areas:
+        "ayui redes pagos newlester";
+    font-size: 10px;
+    background-color: $colorPrincipal;
+    color:$colorFuente1;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    
+    p{
+        font-size: 1.3vw;
+    }
+
+    ul li {
+        list-style: none;
+    }
+    
+}
+
+.ayui ul li a{
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: $colorFuente1;
+    text-transform: capitalize;
+
+    &:hover{
+        color: $colorSecundario;
+    }
+}
+
+.redes{ 
+    display:flex;
+    flex-direction: column;
+
+    ul li a{
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: $colorFuente1;
+    text-transform: capitalize;
+    display: flex;
+
+    &:hover{
+        color: $colorSecundario;
+    }
+}
+}
+.pagos {
+    font-size: 1.3vw;
+    text-transform: capitalize;
+}
+.newlester{
+    text-transform: capitalize;
+    font-size: 1.3vw;
+}
+.btn{
+    color:$colorFuente1;
+    padding: 3PX 5PX;
+    text-decoration: none;
+    font-size: 1.3vw;
+    
+    a{
+        text-decoration: none;
+        color: $colorFuente1;
+
+        &:hover{
+            background-color: $colorFuente1;
+            color: $colorPrincipal;
+        }
+    }
+    }
+/*fin footer*/
