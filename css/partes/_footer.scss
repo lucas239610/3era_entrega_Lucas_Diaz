@@ -12,7 +12,7 @@ footer{
     padding-bottom: 2%;
     
     p{
-        font-size: 1.3vw;
+        font-size: 1.9vw;
     }
 
     ul li {
@@ -22,7 +22,7 @@ footer{
 }
 
 .ayui ul li a{
-    font-size: 1.1vw;
+    font-size: 1.9vw;
     text-decoration: none;
     color: $colorFuente1;
     text-transform: capitalize;
@@ -37,11 +37,12 @@ footer{
     flex-direction: column;
 
     ul li a{
-    font-size: 1.3vw;
+    font-size: 1.9vw;
     text-decoration: none;
     color: $colorFuente1;
     text-transform: capitalize;
     display: flex;
+    padding: 1%;
 
     &:hover{
         color: $colorSecundario;
@@ -49,18 +50,18 @@ footer{
 }
 }
 .pagos {
-    font-size: 1.3vw;
+    font-size: 1.9vw;
     text-transform: capitalize;
 }
 .newlester{
     text-transform: capitalize;
-    font-size: 1.3vw;
+    font-size: 1.9vw;
 }
 .btn{
     color:$colorFuente1;
     padding: 3PX 5PX;
     text-decoration: none;
-    font-size: 1.3vw;
+    font-size: 1.9vw;
     
     a{
         text-decoration: none;

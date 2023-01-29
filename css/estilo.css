@@ -32,12 +32,14 @@
   text-decoration: none;
   color: white;
   /*float:right;*/
-  font-size: 1.1vw;
+  font-size: 1.8vw;
 }
 .encabezado ul li a:hover {
-  border-radius: 5%;
+  transition: transform 0.1s;
+  padding: 1%;
+  border-radius: 6%;
   color: black;
-  background-color: white;
+  background-color: green;
 }
 
 .logo {
@@ -47,9 +49,10 @@
   color: white;
   text-decoration: none;
   padding: 0px 50px 0px 50px;
+  transition: transform 0.4s;
 }
 .logo:hover {
-  font-size: 1.5vw;
+  font-size: 2.01em;
 }
 .logo span {
   color: green;
@@ -99,10 +102,24 @@ main {
   background-attachment: fixed;
 }
 
+.titulo {
+  text-align: center;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
 .video {
   margin: 1% 0% 1% 1%;
-  color: green;
-  font-size: 1.4vw;
+  color: black;
+  font-size: 1.8vw;
 }
 
 .item {
@@ -121,6 +138,7 @@ main {
 }
 .item:hover {
   transform: scale(1.1);
+  transition: transform 0.2s;
 }
 
 .titulo-productos {
@@ -160,14 +178,10 @@ table {
   text-align: center;
   background-color: black;
   color: white;
-  margin-left: 30%;
-  margin-right: 30%;
-  font-size: 1.3vw;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 1.7vw;
   box-shadow: inset 0 0 128px;
-}
-
-.entrega {
-  text-align: center;
 }
 
 /*Fin pagina envios*/
@@ -201,14 +215,14 @@ footer {
   padding-bottom: 2%;
 }
 footer p {
-  font-size: 1.3vw;
+  font-size: 1.9vw;
 }
 footer ul li {
   list-style: none;
 }
 
 .ayui ul li a {
-  font-size: 1.1vw;
+  font-size: 1.9vw;
   text-decoration: none;
   color: white;
   text-transform: capitalize;
@@ -222,31 +236,32 @@ footer ul li {
   flex-direction: column;
 }
 .redes ul li a {
-  font-size: 1.3vw;
+  font-size: 1.9vw;
   text-decoration: none;
   color: white;
   text-transform: capitalize;
   display: flex;
+  padding: 1%;
 }
 .redes ul li a:hover {
   color: green;
 }
 
 .pagos {
-  font-size: 1.3vw;
+  font-size: 1.9vw;
   text-transform: capitalize;
 }
 
 .newlester {
   text-transform: capitalize;
-  font-size: 1.3vw;
+  font-size: 1.9vw;
 }
 
 .btn {
   color: white;
   padding: 3PX 5PX;
   text-decoration: none;
-  font-size: 1.3vw;
+  font-size: 1.9vw;
 }
 .btn a {
   text-decoration: none;
